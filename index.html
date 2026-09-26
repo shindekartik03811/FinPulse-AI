@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FinPulse AI - Loan & Financial Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- NAVBAR -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+                FinPulse AI
+            </div>
+
+            <div class="nav-links">
+                <a href="#loan">Loan</a>
+                <a href="#credit">Credit Score</a>
+                <a href="#emi">EMI</a>
+                <a href="#tips">AI Tips</a>
+            </div>
+
+        </nav>
+        <!-- DASHBOARD HERO -->
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <span class="badge">AI POWERED FINANCIAL PLATFORM</span>
+
+        <h2>
+            Make Smarter
+            <span>Financial Decisions</span>
+        </h2>
+
+        <p>
+            Check loan eligibility, analyze your credit score,
+            calculate EMI and get personalized financial guidance
+            from one simple platform.
+        </p>
+
+        <a href="#loan" class="hero-button">
+            Check Loan Eligibility
+        </a>
+
+    </div>
+
+</section>
+
+
+        <!-- HEADER -->
+
+        <header>
+
+            <h1>FinPulse AI</h1>
+
+            <p>
+                AI-Powered Loan & Financial Assistant
+            </p>
+
+        </header>
+
+
+        <!-- FEATURES -->
+
+        <section class="cards">
+
+
+            <!-- LOAN ELIGIBILITY -->
+
+            <div class="card" id="loan">
+
+                <div class="icon">💰</div>
+
+                <h2>Loan Eligibility</h2>
+
+                <p>
+                    Check your estimated loan eligibility
+                    based on your financial details.
+                </p>
+
+                <label>Monthly Income (₹)</label>
+
+                <input
+                    type="number"
+                    id="income"
+                    placeholder="Example: 50000"
+                >
+
+
+                <label>Existing EMI (₹)</label>
+
+                <input
+                    type="number"
+                    id="existingEMI"
+                    placeholder="Example: 5000"
+                >
+
+
+                <label>Credit Score</label>
+
+                <input
+                    type="number"
+                    id="creditScore"
+                    placeholder="Example: 750"
+                >
+
+
+                <label>Desired Loan Amount (₹)</label>
+
+                <input
+                    type="number"
+                    id="loanAmount"
+                    placeholder="Example: 500000"
+                >
+
+
+                <button onclick="checkLoan()">
+                    Check Eligibility
+                </button>
+
+
+                <div id="loanResult"></div>
+
+            </div>
+
+
+
+            <!-- CREDIT SCORE -->
+
+            <div class="card" id="credit">
+
+                <div class="icon">📊</div>
+
+                <h2>Credit Score Analyzer</h2>
+
+                <p>
+                    Enter your credit score to understand
+                    your credit profile.
+                </p>
+
+
+                <label>Credit Score</label>
+
+                <input
+                    type="number"
+                    id="scoreInput"
+                    placeholder="Example: 750"
+                >
+
+
+                <button onclick="analyzeCredit()">
+                    Analyze Score
+                </button>
+
+
+                <div id="creditResult"></div>
+
+            </div>
+
+
+
+            <!-- EMI CALCULATOR -->
+
+            <div class="card" id="emi">
+
+                <div class="icon">🧮</div>
+
+                <h2>EMI Calculator</h2>
+
+                <p>
+                    Calculate your monthly loan EMI.
+                </p>
+
+
+                <label>Loan Amount (₹)</label>
+
+                <input
+                    type="number"
+                    id="emiLoan"
+                    placeholder="Example: 500000"
+                >
+
+
+                <label>Interest Rate (%)</label>
+
+                <input
+                    type="number"
+                    id="emiRate"
+                    placeholder="Example: 8.5"
+                >
+
+
+                <label>Loan Tenure (Years)</label>
+
+                <input
+                    type="number"
+                    id="emiYears"
+                    placeholder="Example: 5"
+                >
+
+
+                <button onclick="calculateEMI()">
+                    Calculate EMI
+                </button>
+
+
+                <div id="emiResult"></div>
+
+            </div>
+
+
+
+            <!-- AI FINANCIAL TIPS -->
+
+            <div class="card" id="tips">
+
+                <div class="icon">🤖</div>
+
+                <h2>AI Financial Tips</h2>
+
+                <p>
+                    Get useful tips for better
+                    financial management.
+                </p>
+
+
+                <button onclick="showTips()">
+                    Get Financial Tips
+                </button>
+
+
+                <div id="tipsResult"></div>
+
+            </div>
+
+
+        </section>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,17 +1,21 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
+// Serve Frontend
+app.use(express.static(path.join(__dirname, "../Frontend")));
+
+// Home page
 app.get("/", (req, res) => {
-    res.json({
-        message: "FinPulse AI Backend is Running!"
-    });
+    res.sendFile(path.join(__dirname, "../Frontend/index.html"));
 });
 
+// Loan Eligibility
 app.post("/api/loan-eligibility", (req, res) => {
 
     const {
@@ -52,8 +56,7 @@ app.post("/api/loan-eligibility", (req, res) => {
 
     const months = 240;
 
-    const monthlyRate =
-        interestRate / 12 / 100;
+    const monthlyRate = interestRate / 12 / 100;
 
     const eligibleAmount =
         availableEMI *
@@ -69,14 +72,14 @@ app.post("/api/loan-eligibility", (req, res) => {
     }
 
     res.json({
-        status: status,
+        status,
         eligibleAmount: Math.round(eligibleAmount),
-        interestRate: interestRate,
+        interestRate,
         availableEMI: Math.round(availableEMI)
     });
 });
 
-
+// EMI Calculator
 app.post("/api/emi", (req, res) => {
 
     const { loan, rate, years } = req.body;
@@ -88,21 +91,16 @@ app.post("/api/emi", (req, res) => {
     }
 
     const months = years * 12;
-
-    const monthlyRate =
-        rate / 12 / 100;
+    const monthlyRate = rate / 12 / 100;
 
     const emi =
         loan *
         monthlyRate *
-        Math.pow(1 + monthlyRate, months)
-        /
+        Math.pow(1 + monthlyRate, months) /
         (Math.pow(1 + monthlyRate, months) - 1);
 
     const totalPayment = emi * months;
-
-    const totalInterest =
-        totalPayment - loan;
+    const totalInterest = totalPayment - loan;
 
     res.json({
         emi: Math.round(emi),
@@ -111,11 +109,9 @@ app.post("/api/emi", (req, res) => {
     });
 });
 
+// Render PORT
+const PORT = process.env.PORT || 5000;
 
-const PORT = 5000;
-
-app.listen(PORT, () => {
-    console.log(
-        "Server running on http://localhost:5000"
-    );
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`FinPulse AI running on port ${PORT}`);
 });

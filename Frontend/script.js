@@ -14,7 +14,7 @@ async function checkLoan() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/loan-eligibility",
+            "https://finpulse-ai-a9ov.onrender.com/api/loan-eligibility",
             {
                 method: "POST",
 
@@ -61,7 +61,7 @@ async function checkLoan() {
     } catch (error) {
 
         document.getElementById("loanResult").innerHTML =
-            "Backend connection failed. Please check if the server is running.";
+            "Backend connection failed. Please check the server.";
 
         console.error(error);
     }
@@ -99,6 +99,9 @@ function analyzeCredit() {
         <p>Your Credit Score: ${score}</p>
     `;
 }
+
+
+// EMI Calculator
 async function calculateEMI() {
 
     const loan = Number(document.getElementById("emiLoan").value);
@@ -115,7 +118,7 @@ async function calculateEMI() {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/emi",
+            "https://finpulse-ai-a9ov.onrender.com/api/emi",
             {
                 method: "POST",
 
@@ -163,6 +166,8 @@ async function calculateEMI() {
         console.error(error);
     }
 }
+
+
 // AI Financial Tips
 function showTips() {
 
@@ -175,13 +180,19 @@ function showTips() {
     let tips = [];
 
     if (creditScore && creditScore < 650) {
-        tips.push("Work on improving your credit score by paying EMIs and bills on time.");
-    } 
+        tips.push(
+            "Work on improving your credit score by paying EMIs and bills on time."
+        );
+    }
     else if (creditScore && creditScore < 750) {
-        tips.push("Your credit score can be improved. Maintain timely payments.");
-    } 
+        tips.push(
+            "Your credit score can be improved. Maintain timely payments."
+        );
+    }
     else if (creditScore >= 750) {
-        tips.push("Your credit score is strong. Continue maintaining timely payments.");
+        tips.push(
+            "Your credit score is strong. Continue maintaining timely payments."
+        );
     }
 
     if (income && existingEMI) {
@@ -189,24 +200,38 @@ function showTips() {
         const emiRatio = (existingEMI / income) * 100;
 
         if (emiRatio > 40) {
-            tips.push("Your existing EMI is relatively high compared with your income. Avoid taking unnecessary additional debt.");
+            tips.push(
+                "Your existing EMI is relatively high compared with your income. Avoid taking unnecessary additional debt."
+            );
         } else {
-            tips.push("Your existing EMI appears manageable compared with your income.");
+            tips.push(
+                "Your existing EMI appears manageable compared with your income."
+            );
         }
     }
 
     if (!income && !creditScore) {
-        tips.push("Enter your financial details to receive personalized tips.");
+        tips.push(
+            "Enter your financial details to receive personalized tips."
+        );
     }
 
-    tips.push("Compare interest rates and loan terms before choosing a loan.");
-    tips.push("Keep an emergency fund for unexpected expenses.");
+    tips.push(
+        "Compare interest rates and loan terms before choosing a loan."
+    );
+
+    tips.push(
+        "Keep an emergency fund for unexpected expenses."
+    );
 
     result.innerHTML = `
         <h3>Personalized Financial Tips 🤖</h3>
         ${tips.map(tip => `<p>• ${tip}</p>`).join("")}
     `;
 }
+
+
+// Logout
 function logoutUser() {
     window.location.href = "auth.html";
 }

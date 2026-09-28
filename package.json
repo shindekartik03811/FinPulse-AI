@@ -1,0 +1,13 @@
+{
+  "name": "finpulse-ai",
+  "version": "1.0.0",
+  "description": "FinPulse AI - AI Loan Eligibility & Financial Assistant",
+  "scripts": {
+    "start": "node backend/server.js",
+    "install-backend": "cd backend && npm install",
+    "build": "cd backend && npm install"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

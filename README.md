@@ -2,11 +2,8 @@
 
 FinPulse AI is a modern financial technology platform designed to simplify personal financial decision-making with AI-powered financial tools.
 
-🚀 Live Demo (Render Production): https://finpulse-ai-1-2ne5.onrender.com/
-🌐 AI Studio Preview: https://ais-pre-urchb3wycllugypjjzugcy-606191192106.asia-east1.run.app
-📄 Project Documentation (GitHub Viewer): FinPulse AI Project Report (DOCX)
-📥 Direct Download Report: Download Project Report (.docx)
-💻 Source Code Repository: https://github.com/shindekartik03811/FinPulse-A
+Live Application: https://finpulse-ai-1-2ne5.onrender.com/
+Documentation: https://github.com/shindekartik03811/FinPulse-AI/blob/main/FinPulse_AI_Project_Report_KartikShinde.docx
 💰 Loan Eligibility Checker: Analyzes income, existing EMIs, credit score, FOIR, and estimated loan eligibility.
 📊 Credit Score Analyzer: Assesses credit scores from 300–900 and provides improvement suggestions.
 🧮 EMI Calculator: Calculates monthly installments, total interest, and total repayment.

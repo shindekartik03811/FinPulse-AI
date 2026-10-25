@@ -1,44 +1,63 @@
-# 🌟 FinPulse AI - Loan & Financial Assistant
+💰 FinPulse AI – Smart Financial Decision Platform
 
-FinPulse AI is a modern financial technology platform designed to simplify and accelerate personal financial decision-making. The platform provides users with instant access to four core financial tools: **Loan Eligibility Checker**, **Credit Score Analyzer**, **EMI Calculator**, and **AI Financial Tips** — all within a single, seamless, and intuitive interface.
+FinPulse AI is a modern financial technology platform designed to simplify personal financial decision-making with AI-powered financial tools.
 
-FinPulse_AI_Project_Report_KartikShinde.docx
-
-## 🚀 Key Features
-
-1. **💰 Loan Eligibility Checker**:
-   - Analyzes income, existing EMIs, credit score, and desired loan amount.
-   - Calculates dynamic FOIR (Fixed Obligation to Income Ratio) and interest rates.
-   - Computes maximum available EMI and total loan eligibility.
-
-2. **📊 Credit Score Analyzer**:
-   - Provides clear breakdown and health assessment of credit scores (300–900).
-   - Gives actionable guidance on credit improvement and borrowing terms.
-
-3. **🧮 Monthly EMI Calculator**:
-   - Calculates monthly payments, total interest payable, and total loan cost.
-
-4. **🤖 Personalized AI Financial Guidance**:
-   - Dynamically evaluates debt-to-income ratios and credit health to provide tailored tips.
-
-5. **🔐 Authentication**:
-   - Clean client-side authentication system with user session management.
-
----
-
-## 🛠️ Project Structure
-
-```text
+🚀 Live Demo (Render Production): https://finpulse-ai-1-2ne5.onrender.com/
+🌐 AI Studio Preview: https://ais-pre-urchb3wycllugypjjzugcy-606191192106.asia-east1.run.app
+📄 Project Documentation (GitHub Viewer): FinPulse AI Project Report (DOCX)
+📥 Direct Download Report: Download Project Report (.docx)
+💻 Source Code Repository: https://github.com/shindekartik03811/FinPulse-A
+💰 Loan Eligibility Checker: Analyzes income, existing EMIs, credit score, FOIR, and estimated loan eligibility.
+📊 Credit Score Analyzer: Assesses credit scores from 300–900 and provides improvement suggestions.
+🧮 EMI Calculator: Calculates monthly installments, total interest, and total repayment.
+🤖 AI Financial Tips: Provides personalized guidance based on debt-to-income ratio and credit health.
+🔐 Authentication: Login, registration, and client-side session management.
+🛠️ Technologies Used
+Frontend: HTML, CSS, JavaScript
+Backend: Node.js, Express.js
+Deployment: Render
+📂 Project Structure
+text
 AI-Loan-Eligibility/
 ├── backend/
-│   ├── package.json        # Backend dependencies & scripts
-│   └── server.js           # Express API server & static asset host
+│   ├── package.json
+│   └── server.js
 ├── Frontend/
-│   ├── auth.html           # Login & Registration page
-│   ├── auth.js             # Authentication client script
-│   ├── index.html          # Main Dashboard
-│   ├── script.js           # Interactive UI logic & API integrations
-│   └── style.css           # Premium dark theme styling
-├── .gitignore              # Git ignore rules
-├── package.json            # Root configuration for hosting platforms
-└── README.md               # Documentation & Deployment guide
+│   ├── auth.html
+│   ├── auth.js
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+├── FinPulse_AI_Project_Report_KartikShinde.docx
+├── .gitignore
+├── package.json
+└── README.md
+
+⚙️ Installation
+Clone the repository:
+bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+
+Install dependencies:
+bash
+npm install
+
+Start the application using the script configured in package.json:
+bash
+npm start
+
+🎯 Project Objective
+
+To simplify financial planning by bringing loan eligibility estimation, credit score analysis, EMI calculations, and personalized financial guidance into one platform.
+
+⚠️ Disclaimer
+
+FinPulse AI is intended for educational and informational purposes. Predictions are estimates and do not guarantee loan approval.
+
+👨‍💻 Author
+
+Kartik Shinde
+
+⭐ If you find this project useful, please consider starring the repository.
+
+Live Application: https://finpulse-ai-1-2ne5.onrender.com/

@@ -10,20 +10,19 @@ Documentation: https://github.com/shindekartik03811/FinPulse-AI/blob/main/FinPul
 
 FinPulse AI is a modern financial technology platform designed to simplify personal financial decision-making with AI-powered financial tools.
 
-🌐 Live Demo
-
-🚀 Click Here to Open FinPulse AI
-
-📄 Project Report
-
-📥 Click Here to View / Download FinPulse AI Project Report – Kartik Shinde (DOCX)
 
 🚀 Key Features
+
 💰 Loan Eligibility Checker: Analyzes income, existing EMIs, credit score, FOIR, and estimated loan eligibility.
+
 📊 Credit Score Analyzer: Assesses credit scores from 300–900 and provides improvement suggestions.
+
 🧮 EMI Calculator: Calculates monthly installments, total interest, and total repayment.
+
 🤖 AI Financial Tips: Provides personalized guidance based on debt-to-income ratio and credit health.
+
 🔐 Authentication: Login, registration, and client-side session management.
+
 🛠️ Technologies Used
 Frontend: HTML, CSS, JavaScript
 Backend: Node.js, Express.js

@@ -30,38 +30,62 @@ Deployment: Render
 📂 Project Structure
 text
 AI-Loan-Eligibility/
+
 ├── backend/
+
 │   ├── package.json
+
 │   └── server.js
+
 ├── Frontend/
+
 │   ├── auth.html
+
 │   ├── auth.js
+
 │   ├── index.html
+
 │   ├── script.js
+
 │   └── style.css
+
 ├── FinPulse_AI_Project_Report_KartikShinde.docx
+
 ├── .gitignore
+
 ├── package.json
+
 └── README.md
+
 
 ⚙️ Installation
 Clone the repository:
+
 bash
+
 git clone YOUR_GITHUB_REPOSITORY_URL
+
 
 Install dependencies:
 bash
+
 npm install
+
 
 Start the application using the script configured in package.json:
 bash
+
 npm start
+
 
 🎯 Project Objective
 
+
 To simplify financial planning by bringing loan eligibility estimation, credit score analysis, EMI calculations, and personalized financial guidance into one platform.
 
+
 ⚠️ Disclaimer
+
 
 FinPulse AI is intended for educational and informational purposes. Predictions are estimates and do not guarantee loan approval.
 

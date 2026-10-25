@@ -2,7 +2,7 @@
 
 FinPulse AI is a modern financial technology platform designed to simplify and accelerate personal financial decision-making. The platform provides users with instant access to four core financial tools: **Loan Eligibility Checker**, **Credit Score Analyzer**, **EMI Calculator**, and **AI Financial Tips** — all within a single, seamless, and intuitive interface.
 
----
+FinPulse_AI_Project_Report_KartikShinde.docx
 
 ## 🚀 Key Features
 
